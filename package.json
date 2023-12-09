@@ -6,7 +6,9 @@
   "author": "Utkarsh Mishra",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "docker:start": "docker-compose -f docker-compose.yaml up -d",
+    "docker:start:build": "docker-compose -f docker-compose.yaml up --build -d"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",

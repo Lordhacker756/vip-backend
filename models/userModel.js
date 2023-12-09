@@ -21,6 +21,10 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: [true, "Please provide a password"],
     },
+    token: {
+      type: String,
+      required: false,
+    },
   },
   { timestamps: true }
 );

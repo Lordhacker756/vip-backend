@@ -20,5 +20,5 @@ app.use("/api/auth", require("./routes/authRoutes"));
 const port = process.env.PORT || 6000;
 
 app.listen(port, () => {
-  console.log(`Server is running on port: ${port}`);
+  console.log(`Server is not running on port: ${port}`);
 });

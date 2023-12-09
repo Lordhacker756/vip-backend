@@ -1,0 +1,9 @@
+version: "3"
+services:
+  dark_backend:
+    build: .
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    ports:
+      - 6000:6000
